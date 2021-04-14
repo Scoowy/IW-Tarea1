@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  height: 5em;
+  background-color: blue;
+  width: 100%;
+}
+
+.wrapper {
+  background-color: chartreuse;
+}
+
+.footer {
+  height: 20px;
+  background-color: tomato;
+}
