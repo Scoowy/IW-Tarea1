@@ -7,6 +7,8 @@
   --color-2: #ffaa5a;
   --color-3: #c7ef00;
   --color-4: #d56f3e;
+  --color-5: chartreuse;
+  --color-6: #fafa37;
 }
 
 /* Reset */
@@ -23,6 +25,9 @@
 
 a {
   color: var(--dark-color);
+  transition-property: color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
 }
 
 a:hover {
@@ -33,19 +38,28 @@ code {
   font-family: "Fira Code", monospace;
 }
 
+/* Efectos */
+.sombra-suave {
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(92, 92, 92, 0.45);
+  -moz-box-shadow: 0px 3px 7px 0px rgba(92, 92, 92, 0.45);
+  box-shadow: 0px 3px 7px 0px rgba(92, 92, 92, 0.45);
+}
+
+.sombra-media {
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(92, 92, 92, 0.65);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(92, 92, 92, 0.65);
+  box-shadow: 0px 3px 10px 0px rgba(92, 92, 92, 0.65);
+}
+
 /* Elementos */
 /* NavBar */
 .navbar {
   height: 7em;
-  background-color: chartreuse;
+  background-color: var(--color-6);
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(92, 92, 92, 0.65);
-  -moz-box-shadow: 0px 3px 10px 0px rgba(92, 92, 92, 0.65);
-  box-shadow: 0px 3px 10px 0px rgba(92, 92, 92, 0.65);
 }
 
 .navbar .titulo {
@@ -55,14 +69,21 @@ code {
   margin-top: 0.5em;
 }
 
+.navbar nav {
+  background-color: white;
+}
+
+.navbar nav,
+.navbar nav ul {
+  border-radius: 5px;
+}
+
 .navbar nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: var(--light-color);
   height: 100%;
-  border-radius: 10px;
 }
 
 .navbar nav ul > li {
@@ -71,6 +92,7 @@ code {
   align-items: center;
   padding: 10px 20px;
   margin: 5px;
+  font-size: 1.2em;
 }
 
 .container {
@@ -79,9 +101,45 @@ code {
 }
 
 .wrapper {
-  background-color: chartreuse;
-  padding: 1em;
+  margin: 1em 0;
+}
+
+/* Section */
+.section {
   margin: 2em 0;
+}
+
+.section--title {
+  padding: 0 0.5em;
+  border-radius: 3px;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 2em;
+  background-color: var(--color-6);
+}
+
+/* Article */
+
+.article {
+  padding: 0 1em;
+  margin: 1em 0;
+}
+
+.article--title {
+  font-size: 1.5em;
+}
+
+.article--body {
+  font-size: 1.2em;
+}
+
+.article--body p {
+  margin: 0.7em 0;
+}
+
+.article--body pre {
+  border-left: 6px solid #d56f3e;
+  padding-left: 0.5em;
 }
 
 /* Fotter */
@@ -95,6 +153,7 @@ code {
   justify-content: center;
   align-items: center;
   font-weight: lighter;
+  font-size: 1.2em;
 }
 
 .footer p span {
