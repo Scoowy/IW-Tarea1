@@ -1,3 +1,5 @@
+/* Variables */
+
 :root {
   --dark-color: #241624;
   --light-color: #69fff1;
@@ -7,6 +9,8 @@
   --color-4: #d56f3e;
 }
 
+/* Reset */
+
 * {
   padding: 0;
   margin: 0;
@@ -15,30 +19,53 @@
   color: var(--dark-color);
 }
 
+/* Generales */
+
+a {
+  color: var(--dark-color);
+}
+
+a:hover {
+  color: var(--color-4);
+}
+
+code {
+  font-family: "Fira Code", monospace;
+}
+
+/* Elementos */
+/* NavBar */
 .navbar {
-  height: 5em;
-  background-color: rgb(94, 168, 233);
+  height: 7em;
+  background-color: chartreuse;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(92, 92, 92, 0.65);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(92, 92, 92, 0.65);
+  box-shadow: 0px 3px 10px 0px rgba(92, 92, 92, 0.65);
 }
 
 .navbar .titulo {
-  display: inline-block;
-  background-color: blueviolet;
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 2em;
+  margin-top: 0.5em;
 }
 
 .navbar nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  background-color: bisque;
+  justify-content: center;
+  background-color: var(--light-color);
   height: 100%;
+  border-radius: 10px;
 }
 
-.navbar nav ul li {
-  background-color: aquamarine;
+.navbar nav ul > li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,12 +80,15 @@
 
 .wrapper {
   background-color: chartreuse;
-  padding: 20px;
+  padding: 1em;
+  margin: 2em 0;
 }
+
+/* Fotter */
 
 .footer {
   height: 8em;
-  /* background-color: tomato; */
+  background-color: var(--light-color);
   display: flex;
   flex-direction: column;
   padding: 1em 0;
@@ -78,10 +108,5 @@
 }
 
 .footer .footer--link a {
-  margin: 0.5em 1em;
-  color: var(--color-4);
-}
-
-.footer .footer--link a:hover {
-  color: var(--color-3);
+  margin: 0.5em 0.5em;
 }
