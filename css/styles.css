@@ -105,6 +105,12 @@ code {
   margin: 1em 0;
 }
 
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
 /* Section */
 .section {
   margin: 2em 0;
@@ -142,6 +148,24 @@ code {
   border-left: 6px solid #d56f3e;
   padding: 0.5em 0 0.5em 1em;
   background-color: var(--light-color);
+}
+
+.article--body ul {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.article--video {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.article--video > iframe {
+  border-radius: 5px;
+  border: 5px solid var(--color-4);
+  margin: 0;
+  padding: 0;
 }
 
 /* Fotter */
