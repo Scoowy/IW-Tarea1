@@ -36,6 +36,7 @@ a:hover {
 
 code {
   font-family: "Fira Code", monospace;
+  background-color: var(--light-color);
 }
 
 /* Efectos */
@@ -139,7 +140,8 @@ code {
 
 .article--body pre {
   border-left: 6px solid #d56f3e;
-  padding-left: 0.5em;
+  padding: 0.5em 0 0.5em 1em;
+  background-color: var(--light-color);
 }
 
 /* Fotter */

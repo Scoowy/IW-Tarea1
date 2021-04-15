@@ -74,20 +74,78 @@
 
         <section class="section">
           <h2 class="section--title sombra-suave">CSS 3</h2>
+
           <article class="article">
-            <h2 class="article--title">Grid</h2>
+            <h2 class="article--title">¿Qué hay de nuevo?</h2>
             <div class="article--body">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                fuga incidunt assumenda inventore amet deleniti ex recusandae
-                placeat perferendis! Minus placeat facere quidem quae atque
-                obcaecati cumque odit omnis repellat!
+                La especificación de CSS3 posee interesantes novedades que
+                permitirán hacer webs más elaboradas y más dinámicas, con mayor
+                separación entre estilos y contenidos. Dará soporte a muchas
+                necesidades de las webs actuales, sin tener que recurrir a
+                trucos de diseñadores o lenguajes de programación.
               </p>
-              <pre><code>&lt;p&gt;Este es un parrafo&lt;/p&gt;</code></pre>
+            </div>
+          </article>
+
+          <article class="article">
+            <h2 class="article--title">Características de diseño</h2>
+            <div class="article--body">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, commodi.
+                Es posible combinar y apilar varios fondos, con la propiedad
+                <code>box-shadow</code> se coloca una sombra al elemento.
               </p>
+              <pre><code>box-shadow: 0px 3px 7px 0px rgba(92, 92, 92, 0.45);</code></pre>
+            </div>
+          </article>
+
+          <article class="article">
+            <h2 class="article--title">Mejora de bordes</h2>
+            <div class="article--body">
+              <p>
+                Se pueden utilizar imágenes como estilos de los bordes con la
+                propiedad <code>border-image</code>, mediante
+                <code>border-radius</code> se puede redondear los bordes.
+              </p>
+              <pre><code>border-left: 6px solid #d56f3e;<br>border-radius: 3px;</code></pre>
+            </div>
+          </article>
+
+          <article class="article">
+            <h2 class="article--title">Sistema de animación de propiedades</h2>
+            <div class="article--body">
+              <p>
+                Es posible constrollar las animaciones mediante el uso y
+                modificación de las transiciones.
+              </p>
+              <pre><code>transition-property: color;<br/>transition-duration: 500ms;<br/>transition-timing-function: ease-in-out;</code></pre>
+            </div>
+          </article>
+
+          <article class="article">
+            <h2 class="article--title">Tipografía mejorada</h2>
+            <div class="article--body">
+              <p>
+                Se tiene un mejor control en el uso de la tipografía, se puede
+                modificar el texto, el color, tamaño, que sucede cuando el texto
+                excede al contenido...
+              </p>
+              <pre><code>font-family: &quot;Montserrat&quot;, sans-serif;<br/>color: #3D3D3D;<br/>text-align: center;<br/>font-size: 2.5em;<br/>line-height: 2em;</code></pre>
+            </div>
+          </article>
+
+          <article class="article">
+            <h2 class="article--title">Nuevas formas de maquetar</h2>
+            <div class="article--body">
+              <p>
+                Nuevos sistemas de diseño, <code>grid</code> y
+                <code>flexbox</code>, haciendo que estos sean "responive".
+              </p>
+              <p>
+                Estos sistemas de diseño permiten tener un mejor control sobre
+                los elementos hijos, facilitando el trabajo del diseñador.
+              </p>
+              <pre><code>display: flex;<br/>flex-direction: row;<br/>justify-content: center;</code></pre>
             </div>
           </article>
         </section>
